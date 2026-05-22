@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidad</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #4c8b76;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        .form-container {
+            background: #59e0e0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #4a4a4a;
+            font-size: 14px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: #7641bd;
+            outline: none;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            background-color: #cdace4;
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover {
+            background-color: #a567ce;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Contabilidad</h2>
+
+        <form action="#" method="POST">
+
+            <div class="form-group">
+                <label for="ingresos">Ingresos:</label>
+                <input type="number" id="ingresos" name="ingresos"
+                       required placeholder="Monto de ingresos">
+            </div>
+
+            <div class="form-group">
+                <label for="egresos">Egresos:</label>
+                <input type="number" id="egresos" name="egresos"
+                       required placeholder="Monto de egresos">
+            </div>
+
+            <div class="form-group">
+                <label for="concepto">Concepto:</label>
+                <input type="text" id="concepto" name="concepto"
+                       required placeholder="Ej: Pago de servicios">
+            </div>
+
+            <div class="form-group">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                Registrar
+            </button>
+
+        </form>
+    </div>
+
+</body>
+</html>
